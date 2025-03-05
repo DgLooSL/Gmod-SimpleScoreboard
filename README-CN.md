@@ -1,7 +1,7 @@
 ![01](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/01.png?raw=true)
 
 **这是我做的一个记分牌模组，重新设计了记分牌界面，保留原有功能，并添加了一些小功能。**</br></br>
-**题外话**：这是我第一次做GMod的模组。我是看了 [**DanFMN**](https://www.youtube.com/playlist?list=PLN1e9kVZIWewR9Tm48zbxdm1qiBEWYpJI) 的视频开始模组开发的，我的开发经验有限，代码结构有点混乱，并且有很多不合理的地方，一些不会的功能用了Deepseek来帮我开发，希望大家能理解^~^
+**题外话**：这是我第一次做GMod的模组。我是看了 [**DanFMN**](https://www.youtube.com/playlist?list=PLN1e9kVZIWewR9Tm48zbxdm1qiBEWYpJI) 的视频开始模组开发的，我的开发经验有限，代码结构有点混乱，并且有很多不合理的地方，一些不会的功能用了Deepseek来帮我开发，希望大家理解^~^
 </br>
 </br>
 # 安装
