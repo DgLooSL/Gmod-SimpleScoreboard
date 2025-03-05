@@ -12,7 +12,7 @@
 </br></br>1.左侧的装饰条：黄色代表超级管理员，红色代表管理员，蓝色代表普通用户。玩家将根据其等级自动排序。</br></br></br>
 
 ![03](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/03.png?raw=true)
-</br></br>2.显示所有模式下的击杀和死亡次数。使用命令 simple_scoreboard_title 0/1 在简单标题和游戏模式标题之间切换。</br></br></br>
+</br></br>2.显示所有模式下的击杀和死亡次数。使用命令 simple_scoreboard_title 0/1 在简易标题和服务器信息标题之间切换。</br></br></br>
 
 ![04](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/04.png?raw=true)
 </br></br>3.开麦时，语音按钮变为绿色。当静音时，语音按钮切换为红色。</br></br>
