@@ -1,4 +1,4 @@
-### [中文](./README-CN.md)
+### [切换中文](./README-CN.md)
 ![01](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/01.png?raw=true)
 
 **This is a scoreboard mod I created for GMod. I've redesigned the scoreboard interface, keeping all the original features while adding some new small but useful functionalities.**</br></br>
