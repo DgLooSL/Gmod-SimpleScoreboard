@@ -2,5 +2,4 @@
 Side note: This is my first mod for GMod. I started learning by watching [**DanFMN's**](https://www.youtube.com/playlist?list=PLN1e9kVZIWewR9Tm48zbxdm1qiBEWYpJI) tutorials, and due to my limited experience, there might be some inefficiencies and messy code structure. I hope you can understand and bear with me!
 </br>
 </br>
-### use
----
+# use
