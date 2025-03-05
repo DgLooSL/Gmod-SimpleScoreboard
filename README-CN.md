@@ -15,5 +15,5 @@
 
 ![04](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/04.png?raw=true)
 </br></br>3.开麦时，语音按钮变为绿色。当静音时，按钮切换为红色。
-#develop
+# 开发
 </br>可以根据自己的喜好自定义样式。
