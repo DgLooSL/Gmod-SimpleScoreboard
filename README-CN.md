@@ -14,6 +14,6 @@
 </br></br>2.显示所有模式下的击杀和死亡次数。使用命令 simple_scoreboard_title 0/1 在简单标题和游戏模式标题之间切换。</br></br></br>
 
 ![04](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/04.png?raw=true)
-</br></br>3.当玩家启用麦克风时，语音功能按钮变为绿色。当语音功能被禁用时，按钮切换为红色。
+</br></br>3.开麦时，语音按钮变为绿色。当静音时，按钮切换为红色。
 #develop
 </br>可以根据自己的喜好自定义样式。
