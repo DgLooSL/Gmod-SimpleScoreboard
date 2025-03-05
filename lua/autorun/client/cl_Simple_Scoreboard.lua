@@ -124,7 +124,7 @@ local function SimplelScoreboard(toggle)
             
             -- Title bar text.
             if simpleScoreboardTitle then
-                draw.SimpleText("Garry's Mod", "Scoreboard_Arial_28", w/2, 15, color_palette.accent, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+                draw.SimpleText(GetHostName(), "Scoreboard_Arial_28", w/2, 15, color_palette.accent, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
                 draw.SimpleText(engine.ActiveGamemode(), "Scoreboard_Arial_20", w/2, 38, color_palette.text_secondary, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
             else
                 draw.SimpleText(SIMPLE_SCOREBOARD_LANGUAGES.player_list[GetLanguage()], "Scoreboard_Arial_28", w/2 + 2, 32 + 2, Color(0,0,0,100), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
