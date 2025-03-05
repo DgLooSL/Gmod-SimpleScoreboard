@@ -15,5 +15,5 @@
 
 ![04](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/04.png?raw=true)
 </br></br>3.When the player enables the microphone, the voice function button turns green. When the voice function is disabled, the button switches to red.
-
-
+# develop
+</br>You can customize the style to your preference.
