@@ -9,6 +9,9 @@
 </br></br>1.On the left side, decorative bars are color-coded: yellow for super admins, red for admins, and blue for regular users. Players are automatically sorted by their rank.</br></br></br>
 
 ![03](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/03.png?raw=true)
-</br></br>2.Displays the number of kills and deaths. Use the command simple_scoreboard_title 0/1 to switch between a simple title and the current game mode title.
+</br></br>2.Displays the number of kills and deaths. Use the command simple_scoreboard_title 0/1 to switch between a simple title and the current game mode title.</br></br></br>
+
+![04](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/04.png?raw=true)
+</br></br>3.When the player enables the microphone, the voice function button turns green. When the voice function is disabled, the button switches to red.
 
 
