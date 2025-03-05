@@ -5,7 +5,10 @@
 </br>
 </br>
 # use
-![02](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/02.png?raw=true)</bt>
+![02](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/02.png?raw=true)</br>
 1.On the left side, decorative bars are color-coded: yellow for super admins, red for admins, and blue for regular users. Players are automatically sorted by their rank.</br>
 
-![03](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/03.png?raw=true)</bt>
+![03](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/03.png?raw=true)</br>
+2.Displays the number of kills and deaths. Use the command simple_scoreboard_title 0/1 to switch between a simple title and the current game mode title.
+
+
