@@ -7,7 +7,7 @@ This is the first version. In the next update, I plan to refactor the code, add 
 </br>
 </br>
 # Installation
-</br>**Installation: Simply drag and drop the lua folder into your GarrysMod\garrysmod\addons\Create a file directory.**</br></br>
+</br>**Installation: Simply drag and drop the lua folder into your GarrysMod\garrysmod\addons\ directory.**</br></br>
 # use
 ![02](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/02.png?raw=true)
 </br></br>1.On the left side, decorative bars are color-coded: yellow for super admins, red for admins, and blue for regular users. Players are automatically sorted by their rank.</br></br></br>
