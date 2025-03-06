@@ -2,7 +2,7 @@
 
 **一个记分版模组，重新设计了记分版界面，保留了原有功能，并添加了一些小功能。**</br></br>
 计划在下个版本重写代码，添加可以定制记分版的菜单和一些新功能，并修复bug </br></br>
-**题外话**：这是我第一次做GMod的模组。我是看 [**DanFMN**](https://www.youtube.com/playlist?list=PLN1e9kVZIWewR9Tm48zbxdm1qiBEWYpJI) 的教程学的做gmod模组，我的开发经验有限，代码结构有点混乱，且有很多不合理的地方，一些我不熟悉的功能用了Deepseek来帮我开发，希望大家理解^~^
+**题外话**：这是我第一次做GMod的模组。我是看 [**DanFMN**](https://www.youtube.com/playlist?list=PLN1e9kVZIWewR9Tm48zbxdm1qiBEWYpJI) 的教程学做gmod模组的，我的开发经验有限，代码结构有点混乱，且有很多不合理的地方，一些我不熟悉的功能用了Deepseek来帮我开发，希望大家理解^~^
 </br>
 </br>
 # 安装
