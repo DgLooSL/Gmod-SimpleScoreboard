@@ -6,7 +6,7 @@
 </br>
 </br>
 # 安装
-</br>**安装：将 lua 文件夹拖放到您的 GarrysMod\garrysmod\addons\ **</br></br>
+</br>**安装：将 SimpleScoreboard 文件夹拖放到您的 GarrysMod\garrysmod\addons\**</br></br>
 # 使用
 ![02](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/02.png?raw=true)
 </br></br>1.左侧的装饰条含义：黄色为超级管理员，红色为管理员，蓝色为普通用户。根据玩家等级自动排序。</br></br></br>
