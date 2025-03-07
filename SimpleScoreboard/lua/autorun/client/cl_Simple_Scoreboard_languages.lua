@@ -6,6 +6,7 @@ SIMPLE_SCOREBOARD_LANGUAGES = {
         ["zh-TW"] = "玩家清單",
         ["ru"] = "Список игроков",
         ["ja"] = "プレイヤー一覧",
+        ["tr"] = "Oyuncu Listesi",
         ["ko"] = "플레이어 목록"
     },
     ["columns"] = {
@@ -15,6 +16,7 @@ SIMPLE_SCOREBOARD_LANGUAGES = {
             ["zh-TW"] = "名稱",
             ["ru"] = "Имя",
             ["ja"] = "名前",
+            ["tr"] = "Ad",
             ["ko"] = "이름"
         },
         kills = {
@@ -23,6 +25,7 @@ SIMPLE_SCOREBOARD_LANGUAGES = {
             ["zh-TW"] = "擊殺", 
             ["ru"] = "Фраг",
             ["ja"] = "キル",
+            ["tr"] = "L",
             ["ko"] = "킬"
         },
         death = {
@@ -31,6 +34,7 @@ SIMPLE_SCOREBOARD_LANGUAGES = {
             ["zh-TW"] = "死亡", 
             ["ru"] = "смерть",
             ["ja"] = "デス数",
+            ["tr"] = "Ö",
             ["ko"] = "죽음"
         },
     },
@@ -40,6 +44,7 @@ SIMPLE_SCOREBOARD_LANGUAGES = {
         ["zh-TW"] = "切換語音",
         ["ru"] = "Переключить голос",
         ["ja"] = "ボイスを切り替え",
+        ["tr"] = "Sesi aç/kapat",
         ["ko"] = "음성 전환"
     }
 }
