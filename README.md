@@ -12,8 +12,8 @@ This is the first version. In the next update, I plan to refactor the code, add 
 ![02](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/02.png?raw=true)
 </br></br>1.On the left side, decorative bars are color-coded: yellow for super admins, red for admins, and blue for regular users. Players are automatically sorted by their rank.</br></br></br>
 ![03](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/03.png?raw=true)
-</br></br>2.Displays real-time kill/death statistics.</br>
-           **simple_scoreboard_title 0/1** Toggle between scoreboard title display mode
+</br></br>2.Displays real-time kill/death statistics.</br></br>
+            **simple_scoreboard_title 0/1** Toggle between scoreboard title display mode
 
 ​           **simple_scoreboard_signal_ico 0/** Toggle ping icon display style
 
