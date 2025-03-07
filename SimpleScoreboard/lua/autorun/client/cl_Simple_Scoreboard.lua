@@ -18,15 +18,13 @@ local color_palette = {
 }
 
 -- Select Title
-CreateConVar("scoreboard_title", "0", FCVAR_ARCHIVE)
-concommand.Add("simple_scoreboard_title", function(ply, cmd, args)
-    local select_Title = tonumber(args[1])
-    if select_Title == 1 then
-        RunConsoleCommand("scoreboard_title", 1)
-    else
-        RunConsoleCommand("scoreboard_title", 0)
-    end
-end)
+CreateConVar("simple_scoreboard_title", "0", FCVAR_ARCHIVE)
+
+-- Select the signal icon
+CreateConVar("simple_scoreboard_signal_ico", "0", FCVAR_ARCHIVE)
+
+-- Choose whether to close the icon
+CreateConVar("simple_scoreboard_signal_switch", "0", FCVAR_ARCHIVE)
 
 -- Receive player user group information sent by the server.
 net.Receive("UpdatePlayerUserGroup", function()
@@ -90,9 +88,9 @@ surface.CreateFont("Scoreboard_Arial_28", {
 })
 
 surface.CreateFont("Scoreboard_Verdana_ping", {
-	font = "Verdana",
-	size = DynamicFontSize(12),
-    weight = 1200,
+	font = "Arial",
+	size = DynamicFontSize(15),
+    weight = 1200
 })
 
 
@@ -128,8 +126,8 @@ local function SimplelScoreboard(toggle)
             draw.RoundedBoxEx(15, 0, 0, w, h * 0.065, color_palette.header, true, true, false, false)
             
             -- Title bar text.
-            local scoreboard_title = GetConVar("scoreboard_title"):GetInt()
-            if scoreboard_title == 1 then
+            local simple_scoreboard_title = GetConVar("simple_scoreboard_title"):GetInt()
+            if simple_scoreboard_title == 1 then
                 draw.SimpleText(GetHostName(), "Scoreboard_Arial_28", w/2, 15, color_palette.accent, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
                 draw.SimpleText(engine.ActiveGamemode(), "Scoreboard_Arial_20", w/2, 38, color_palette.text_secondary, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
             else
@@ -316,21 +314,47 @@ local function SimplelScoreboard(toggle)
                     -- Player name.
                     draw.SimpleText(playernames, "Scoreboard_Arial_20", w*0.15 - 13, h / 2.5, color_palette.text_primary, TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
                    
-                    -- Visual representation of ping values through bars and accompanying text.
-                    draw.RoundedBox(16, w*0.728, h / 3.5, w*0.11, h*0.26, Color(0, 0, 50))
-                    if playerpings <= 50 then
-                        draw.RoundedBox(16, w*0.730, h / 3.2, playerpings / 4, h*0.2, Color(0 ,255, 0, 200))
-                    elseif playerpings > 50 and playerpings <= 150 then
-                        draw.RoundedBox(16, w*0.730, h / 3.2, playerpings / 4, h*0.2, Color(150, 255, 0, 200))
-                    elseif playerpings > 150 and playerpings <= 200 then
-                        draw.RoundedBox(16, w*0.730, h / 3.2, playerpings / 4, h*0.2, Color(221, 221, 36, 200))     
-                    elseif playerpings > 200 and playerpings <= 300 then
-                        draw.RoundedBox(16, w*0.730, h / 3.2, playerpings / 4, h*0.2, Color(255, 130, 0, 200))           
+                    -- ping
+                    local simple_scoreboard_signal_switch = GetConVar("simple_scoreboard_signal_switch"):GetInt()
+                    local simple_scoreboard_signal_ico = GetConVar("simple_scoreboard_signal_ico"):GetInt()
+                    if simple_scoreboard_signal_switch == 1 then
+                        -- Turn off visual mode and display only text
+                        draw.SimpleText(playerpings.."ms", "Scoreboard_Arial_20", w*0.75, h / 2.5, color_palette.text_primary, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)    
                     else
-                        draw.RoundedBox(16, w*0.730, h / 3.2, 300 / 4, h*0.2, Color(255, 0, 0))
-                    end 
-                    draw.SimpleText(playerpings.."ms", "Scoreboard_Verdana_ping", w*0.86, h / 2.5, Color(255, 255, 0), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-                
+                        -- Visual representation of ping values ​​via png image and accompanying text.
+                        if simple_scoreboard_signal_ico == 1 then
+                            local material
+                            if playerpings <= 100 then
+                                material = Material("materials/signal/max.png")
+                                surface.SetMaterial(material)
+                            elseif playerpings > 100 and playerpings <= 200 then
+                                material = Material("materials/signal/on.png")
+                                surface.SetMaterial(material)
+                            else
+                                material = Material("materials/signal/min.png")
+                                surface.SetMaterial(material)
+                            end
+                            surface.SetDrawColor(255, 255, 255, 255)
+                            surface.DrawTexturedRect(w*0.730, h / 6.5, 32, 32)    
+                            draw.SimpleText(playerpings.."ms", "Scoreboard_Verdana_ping", w*0.775, h / 2, Color(255, 255, 0), TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)    
+                        else
+                            -- Visual representation of ping values through bars and accompanying text.
+                            draw.RoundedBox(16, w*0.728, h / 3.5, w*0.11, h*0.26, Color(0, 0, 50))
+                            if playerpings <= 50 then
+                                draw.RoundedBox(16, w*0.733, h / 3.15, 12.5, h*0.2, Color(0 ,255, 0, 200))
+                            elseif playerpings > 50 and playerpings <= 150 then
+                                draw.RoundedBox(16, w*0.733, h / 3.15, playerpings / 3.9, h*0.2, Color(150, 255, 0, 200))
+                            elseif playerpings > 150 and playerpings <= 200 then
+                                draw.RoundedBox(16, w*0.733, h / 3.15, playerpings / 3.9, h*0.2, Color(221, 221, 36, 200))     
+                            elseif playerpings > 200 and playerpings <= 300 then
+                                draw.RoundedBox(16, w*0.733, h / 3.15, playerpings / 3.9, h*0.2, Color(255, 100, 0, 200))           
+                            else
+                                draw.RoundedBox(16, w*0.733, h / 3.15, 300 / 3.9, h*0.2, Color(255, 0, 0))
+                            end 
+                            draw.SimpleText(playerpings.."ms", "Scoreboard_Verdana_ping", w*0.87, h / 2.5, Color(255, 255, 0), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER) 
+                        end
+                    end
+
                     -- Show the count of kills and deaths.
                     draw.SimpleText(playerKills, "Scoreboard_Arial_20", w*0.445, h / 2.5, color_palette.text_primary, TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
                     draw.SimpleText(playerDeaths, "Scoreboard_Arial_20", w*0.595, h / 2.5, color_palette.text_primary, TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
