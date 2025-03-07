@@ -12,7 +12,12 @@
 </br></br>1.左侧的装饰条含义：黄色为超级管理员，红色为管理员，蓝色为普通用户。根据玩家等级自动排序。</br></br></br>
 
 ![03](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/03.png?raw=true)
-</br></br>2.显示所有模式下的击杀和死亡次数。使用命令 simple_scoreboard_title 0/1 切换计分板标题。</br></br></br>
+</br></br>2.显示所有模式下的击杀和死亡次数。</br>
+- **simple_scoreboard_title 0/1** 切换记分牌标题
+
+- **simple_scoreboard_signal_ico 0/** 切换 ping 图标显示样式
+
+- **simple_scoreboard_signal_switch 0/1** 是否启用 ping 图标</br></br></br>
 
 ![04](https://github.com/DgLooSL/Gmod-SimpleScoreboard/blob/main/img/04.png?raw=true)
 </br></br>3.打开麦时，语音按钮切换为绿色。静音时，语音按钮切换为红色。</br></br>
